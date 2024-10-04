@@ -5,10 +5,10 @@ export default class HolbertonClass {
   }
 
   [Symbol.toPrimitive](type) {
-    if (type === "number") {
+    if (type === 'number') {
       return this._size;
     }
-    if (type === "string") {
+    if (type === 'string') {
       return this._location;
     }
     return this;
